@@ -31,6 +31,8 @@ HOST_BUILD_PARALLEL:=1
 
 include $(INCLUDE_DIR)/toolchain-build.mk
 
+HOST_CFLAGS += -std=gnu89
+
 HOST_CONFIGURE_VARS += \
 	gdb_cv_func_sigsetjmp=yes
 
