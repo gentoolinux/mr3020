@@ -21,7 +21,7 @@ ifneq ($(CONFIG_SDK)$(CONFIG_PACKAGE_kmod-b43)$(CONFIG_PACKAGE_b43legacy-firmwar
   BUILD_B43_TOOLS = y
 endif
 
-tools-$(BUILD_TOOLCHAIN) += gmp mpfr mpc libelf expat
+tools-$(BUILD_TOOLCHAIN) += gmp mpfr mpc expat
 tools-y += m4 libtool autoconf automake flex bison pkg-config mklibs
 tools-y += sstrip make-ext4fs e2fsprogs mtd-utils mkimage
 tools-y += firmware-utils patch-image quilt padjffs2
@@ -58,7 +58,6 @@ $(curdir)/upslug2/compile := $(curdir)/libtool/install
 $(curdir)/mm-macros/compile := $(curdir)/libtool/install
 $(curdir)/missing-macros/compile := $(curdir)/autoconf/install
 $(curdir)/e2fsprogs/compile := $(curdir)/libtool/install
-$(curdir)/libelf/compile := $(curdir)/libtool/install
 $(curdir)/sdcc/compile := $(curdir)/bison/install
 $(curdir)/b43-tools/compile := $(curdir)/bison/install
 $(curdir)/padjffs2/compile := $(curdir)/findutils/install
