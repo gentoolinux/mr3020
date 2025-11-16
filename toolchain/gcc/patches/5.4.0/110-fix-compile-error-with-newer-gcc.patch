@@ -1,0 +1,11 @@
+--- a/gcc/reload1.c	2015-01-15 14:28:42.000000000 +0100
++++ b/gcc/reload1.c	2025-11-16 11:34:37.716884872 +0100
+@@ -467,7 +467,7 @@
+ 
+   while (memory_address_p (QImode, tem))
+     {
+-      spill_indirect_levels++;
++      spill_indirect_levels = 1;
+       tem = gen_rtx_MEM (Pmode, tem);
+     }
+ 
