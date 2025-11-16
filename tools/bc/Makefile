@@ -18,4 +18,6 @@ PKG_HASH:=7ee4abbcfac03d8a6e1a8a3440558a3d239d6b858585063e745c760957725ecc
 
 include $(INCLUDE_DIR)/host-build.mk
 
+HOST_CFLAGS += -std=gnu89
+
 $(eval $(call HostBuild))
