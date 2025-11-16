@@ -1,0 +1,10 @@
+--- a/Source/cmServerProtocol.cxx	2016-11-30 16:14:32.000000000 +0100
++++ b/Source/cmServerProtocol.cxx	2025-11-16 17:53:36.851437352 +0100
+@@ -26,6 +26,7 @@
+ #include <algorithm>
+ #include <string>
+ #include <vector>
++#include <limits>
+ 
+ // Get rid of some windows macros:
+ #undef max
